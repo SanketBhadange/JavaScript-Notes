@@ -27,44 +27,44 @@ console.log(arr.length) // print 6 as there are a total of 6 elements in an arra
 ```
 
 ## Array methods
-``` JavaScript
+
 
 ### Push Method: Inserting an element into an array at the end
-
+``` JavaScript
 let cars = ['swift', 'BMW', 'Audi']
 console.log(cars) // print ['swift', 'BMW', 'Audi']
 cars.push('Urus')
 console.log(cars) // print ['swift', 'BMW', 'Audi', 'Urus']
-
+```
 ### Pop Method: Delete the element from the end of the array
-
+``` JavaScript
 let cars = ['swift', 'BMW', 'Audi', 'Urus']
 console.log(cars) // print ['swift', 'BMW', 'Audi', 'Urus']
 cars.pop()
 console.log(cars) // print ['swift', 'BMW', 'Audi']
-
+```
 ### Popped elements can also be stored in another variable.
-
+``` JavaScript
 let cars = ['swift', 'BMW', 'Audi', 'Urus']
 var removedElement = cars.pop()
 console.log(removedElement) // print Urus
-
+```
 ### Unshift Method Insert an element at the start of an array(0th index).
-
+``` JavaScript
 let cars = ['swift', 'BMW', 'Audi']
 console.log(cars) // print ['swift', 'BMW', 'Audi']
 cars.unshift('Urus')
 console.log(cars) // print ['Urus', 'Swift', 'BMW', 'Audi']
-
+```
 ### Shift Method Remove the 0th index element of an array.
-
+``` JavaScript
 let cars = ['swift', 'BMW', 'Audi', 'Urus']
 console.log(cars) // print ['swift', 'BMW', 'Audi', 'Urus']
 cars.shift()
 console.log(cars) // print ['BMW', 'Audi', 'Urus']
-
+```
 ### Shifted elements can also be stored in another variable.
-
+``` JavaScript
 let cars = ['swift', 'BMW', 'Audi', 'Urus']
 var removedElement = cars.shift()
 console.log(removedElement) // print swift
