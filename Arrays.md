@@ -1,0 +1,92 @@
+## ARRAYS
+``` JavaScript
+
+//Accessing array element
+let arr = [1, 'Scaler', true, undefined, null, [1, 2, 3]]
+console.log(arr)
+
+// access an element with index from an array
+console.log(arr[4]) // print null
+
+let d=arr[5]
+console.log(d) // print [1, 2, 3]
+console.log(d[0]) // print 1
+
+//Changing an array element
+let arr = [1, 'Scaler', true, undefined, null, [1, 2, 3]]
+console.log(arr) // print [1, 'Scaler', true, undefined, null, [1, 2, 3]]
+
+// change an array element to a different value
+arr[3] = 'Mrinal'
+arr[4] = 700
+console.log(arr) //print [1, 'Scaler', true, 'Mrinal', 700, [1, 2, 3]]
+
+//Length of an array
+let arr = [1, 'Scaler', true, undefined, null, [1, 2, 3]]
+console.log(arr.length) // print 6 as there are a total of 6 elements in an array.
+```
+
+## Array methods
+``` JavaScript
+
+### Push Method: Inserting an element into an array at the end
+
+let cars = ['swift', 'BMW', 'Audi']
+console.log(cars) // print ['swift', 'BMW', 'Audi']
+cars.push('Urus')
+console.log(cars) // print ['swift', 'BMW', 'Audi', 'Urus']
+
+### Pop Method: Delete the element from the end of the array
+
+let cars = ['swift', 'BMW', 'Audi', 'Urus']
+console.log(cars) // print ['swift', 'BMW', 'Audi', 'Urus']
+cars.pop()
+console.log(cars) // print ['swift', 'BMW', 'Audi']
+
+### Popped elements can also be stored in another variable.
+
+let cars = ['swift', 'BMW', 'Audi', 'Urus']
+var removedElement = cars.pop()
+console.log(removedElement) // print Urus
+
+### Unshift Method Insert an element at the start of an array(0th index).
+
+let cars = ['swift', 'BMW', 'Audi']
+console.log(cars) // print ['swift', 'BMW', 'Audi']
+cars.unshift('Urus')
+console.log(cars) // print ['Urus', 'Swift', 'BMW', 'Audi']
+
+### Shift Method Remove the 0th index element of an array.
+
+let cars = ['swift', 'BMW', 'Audi', 'Urus']
+console.log(cars) // print ['swift', 'BMW', 'Audi', 'Urus']
+cars.shift()
+console.log(cars) // print ['BMW', 'Audi', 'Urus']
+
+### Shifted elements can also be stored in another variable.
+
+let cars = ['swift', 'BMW', 'Audi', 'Urus']
+var removedElement = cars.shift()
+console.log(removedElement) // print swift
+```
+
+## Loops
+
+``` JavaScript
+//Example 1: To print the square of every element of an array.
+
+let arr = [1, 2, 3, 4, 5]
+for(let i=0;i<arr.length;i++){
+    console.log(arr[i]*arr[i])
+}
+// print 1 4 9 16 25
+
+//Example 2: Storing the square of every element of an array in another array.
+
+let arr = [1, 2, 3, 4, 5]
+let squareArr = []
+for(let i=0;i<arr.length;i++){
+    squareArr.push(arr[i]*arr[i])
+}
+console.log(squareArr) // print [1, 4, 9, 16, 25]
+```
