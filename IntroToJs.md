@@ -4,7 +4,7 @@
 console.log(5 / 2); // Output: 2.5
 ```
 
-##2.Strings
+## 2.Strings
 ``` JavaScript
 let age = 25;
 let str1 = 'I am ' + age + " years old ";
@@ -15,7 +15,7 @@ let templateString = `I am ${age} years old`;
 console.log(templateString); // Output: I am 25 years old
 ```
 
-##3.Null and Undefined:
+## 3.Null and Undefined:
 ``` JavaScript
 let myNull = null;
 let myUndefined;
@@ -35,15 +35,16 @@ a = { "name": "Jasbir" };
 console.log(typeof a); // Output: object
 ```
 
-##5.typeof null and Array Check:
-
+## 5.typeof null and Array Check:
+``` JavaScript
 console.log(typeof null); // Output: object
 
 let arr = [1, 2, 3, 4];
 console.log(Array.isArray(arr)); // Output: true
+```
 
-
-// Function Definition
+## Function Definition
+``` JavaScript
 function fn(param1) {
     console.log("Hello world!", param1);
     return "Returned value";
@@ -53,9 +54,11 @@ function fn(param1) {
 let rVal = fn();
 
 console.log("Return value:", rVal);
+```
 
-//Objects and JSON
-// Object Definition
+
+## Object Definition
+``` JavaScript
 let cap = {
     name: "Steve",
     age: 34,
@@ -67,8 +70,10 @@ let cap = {
 for (let key in cap) {
     console.log(key, " ", cap[key], " ", cap.key);
 }
+```
 
-//Arrays
+## Arrays
+``` JavaScript
 let arr = [1, 'Scaler', true, undefined, null, [1, 2, 3]]
 console.log(arr)
 // access an element with index from an array
@@ -90,3 +95,4 @@ console.log(arr) //print [1, 'Scaler', true, 'Mrinal', 700, [1, 2, 3]]
 //Length of an array
 let arr = [1, 'Scaler', true, undefined, null, [1, 2, 3]]
 console.log(arr.length) // print 6 as there are a total of 6 elements in an array.
+```
